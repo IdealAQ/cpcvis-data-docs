@@ -1,23 +1,24 @@
 ---
 ---
+
+@import "{{ site.theme }}";
 body {
   box-sizing: border-box;
   color:#373737;
-  background: #20BFC3;
+  background: #20BFC3;!important;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 #header_wrap {
-  background: #20BFC3;
-  background: -moz-linear-gradient(top, #373737, #20BFC3);
-  background: -webkit-linear-gradient(top, #373737, #20BFC3);
-  background: -ms-linear-gradient(top, #373737, #20BFC3);
-  background: -o-linear-gradient(top, #373737, #20BFC3);
-  background: linear-gradient(to top, #373737, #20BFC3);
+  background: #20BFC3;!important;
+  background: -moz-linear-gradient(top, #373737, #20BFC3);!important;
+  background: -webkit-linear-gradient(top, #373737, #20BFC3);!important;
+  background: -ms-linear-gradient(top, #373737, #20BFC3);!important;
+  background: -o-linear-gradient(top, #373737, #20BFC3);!important;
+  background: linear-gradient(to top, #373737, #20BFC3);!important;
 }
 #footer_wrap {
-  background: #212121;
+  background: #20BFC3;!important;
 }
-@import "{{ site.theme }}";
