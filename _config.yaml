@@ -1,5 +1,5 @@
 remote_theme: pages-themes/slate@v0.2.0
 plugins:
   - jekyll-remote-theme
-title: visualisation data
-description: some description
+title: IdealAQ data structure
+description: The documentation is work in progress
