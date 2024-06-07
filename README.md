@@ -50,7 +50,7 @@ The request requires the following URL parameters:
 | metadata ???   | no       | ?                                             | ?                       |
 
 
-Measurement parameters:
+## Measurement parameters
 
 | parameter key       | description                | unit                                                    |
 |---------------------|----------------------------|---------------------------------------------------------|
@@ -72,7 +72,7 @@ Measurement parameters:
 |                     |                            |                                                         |
 
 
-Metadata:
+## Metadata
 > TODO:
 
 | parameter key | description        |
@@ -81,9 +81,9 @@ Metadata:
 | location_lat  | location latitude  |                                                         |
 | location_alt  | location altitude  |                                                         |
 
+## Example
 
-example:
-
+request:
 ```
 curl -X 'GET' \
   'http://domain.com/measurements?date_time_from=2024-05-01T00%3A00%3A00Z&date_time_to=2024-05-01T00%3A00%3A03Z&device_id=0&parameters=humidity%2Ctemperature%2Cco' \
@@ -120,3 +120,17 @@ response:
   }
 ]
 ```
+
+## Limitations
+- The amount requested data to be returned cannot exceed 5MB before filters are applied (queried parameters). If the data size is exceeded, the response contains only the amount of data items that fit in the limitation and subsequent items are not returned.
+- One way to overcome the limitation mentioned above is the use of subsequent requests.
+- Subsequent requests might trigger an error in the service of our third-party storage service provider. For this reason, between subsequent requests there must be a sufficient waiting time.
+
+## Recommendations
+- query no more than 15 minutes of time-series data for one device.
+- avoid subsequent requests if possible. 
+- in case of subsequent requests, use sufficient waiting time between the requests. The length of the waiting time can be determined experimentally.
+
+> **Note:** The system is still in development mode and has limited resources. For that reason, call API with caution and have in mind that there is only a number of requests the current setup can handle per time! This might be also the reason for unexpected errors. The system might be jammed either by you or someone else.
+
+In case of persisting issues, contact [dominik.rohal@helsinki.fi](mailto:dominik.rohal@helsinki.fi?subject=[CPC%20vis%20API]%20Issue)
