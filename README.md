@@ -47,7 +47,6 @@ The request requires the following URL parameters:
 | date_time_to   | yes      | date time to query data to                    | 2024-05-01T00:00:03Z    |
 | device_id      | yes      | ID of device to query data from               | cpc1                    |
 | parameters     | no       | parameters to query in comma-separated format | humidity,temperature,co |
-| metadata ???   | no       | ?                                             | ?                       |
 
 
 ## Measurement parameters
@@ -55,6 +54,9 @@ The request requires the following URL parameters:
 | parameter key       | description                | unit                                                    |
 |---------------------|----------------------------|---------------------------------------------------------|
 | sample_date_time    | date time of the sample    | UTC date time in ISO 8601 format (YYYY-MM-DDThh:mm:ssZ) |
+| location_lon        | location longitude         |                                                         |
+| location_lat        | location latitude          |                                                         |
+| location_alt        | location altitude          |                                                         |
 | humidity            | humidity                   | percent \[%\]                                           |
 | temperature         | temperature                | celsius \[°C\]                                          |
 | co                  | carbon monoxide            |                                                         |
@@ -71,15 +73,6 @@ The request requires the following URL parameters:
 | voc                 | volatile organic compounds |                                                         |
 |                     |                            |                                                         |
 
-
-## Metadata
-> TODO:
-
-| parameter key | description        |
-|---------------|--------------------|
-| location_lon  | location longitude |                                                         |
-| location_lat  | location latitude  |                                                         |
-| location_alt  | location altitude  |                                                         |
 
 ## Example
 
