@@ -101,9 +101,10 @@ response:
     "co": 0
   },
   {
-    "condenser_temperature": 21.304043636675573,
-    "saturator_temperature": 40.363429148424565,
-    "sample_date_time": "2024-05-01T00:00:01Z"
+    "sample_date_time": "2024-05-01T00:00:01Z",
+    "humidity": 50.0,
+    "temperature": 27.5,
+    "co": 0
   },
   {
     "sample_date_time": "2024-05-01T00:00:02Z",
