@@ -53,7 +53,7 @@ The request requires the following URL parameters:
 
 | parameter key       | description                | unit                                |
 |---------------------|----------------------------|-------------------------------------|
-| sample_date_time    | date time of the sample    | UTC date time (YYYY-MM-DD hh:mm:ss) |
+| time                | date time of the sample    | UTC date time (YYYY-MM-DD hh:mm:ss) |
 | location_lon        | location longitude         | degrees \[°]                        |
 | location_lat        | location latitude          | degrees \[°]                        |
 | location_alt        | location altitude          | degrees \[°]                        |
