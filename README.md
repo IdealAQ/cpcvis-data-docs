@@ -51,27 +51,35 @@ The request requires the following URL parameters:
 
 ## Measurement parameters
 
-| parameter key       | description                | unit                                                    |
-|---------------------|----------------------------|---------------------------------------------------------|
-| sample_date_time    | date time of the sample    | UTC date time in ISO 8601 format (YYYY-MM-DDThh:mm:ssZ) |
-| location_lon        | location longitude         |                                                         |
-| location_lat        | location latitude          |                                                         |
-| location_alt        | location altitude          |                                                         |
-| humidity            | humidity                   | percent \[%\]                                           |
-| temperature         | temperature                | celsius \[°C\]                                          |
-| co                  | carbon monoxide            |                                                         |
-| co2                 | carbon dioxide             | parts per billion \[ppb\]                               |
-| h2s                 | hydrogen sulfide           |                                                         |
-| nh2                 | amino radical              |                                                         |
-| no                  | nitric oxide               |                                                         |
-| no2                 | nitrogen dioxide           |                                                         |
-| ox                  | oxalate                    |                                                         |
-| particles_raw       |                            |                                                         |
-| particles_corrected |                            |                                                         |
-| rh                  | rhodium                    |                                                         |
-| so2                 | sulfur dioxide             |                                                         |
-| voc                 | volatile organic compounds |                                                         |
-|                     |                            |                                                         |
+| parameter key       | description                | unit                                |
+|---------------------|----------------------------|-------------------------------------|
+| sample_date_time    | date time of the sample    | UTC date time (YYYY-MM-DD hh:mm:ss) |
+| location_lon        | location longitude         | degrees \[°]                        |
+| location_lat        | location latitude          | degrees \[°]                        |
+| location_alt        | location altitude          | degrees \[°]                        |
+| humidity            | relative humidity          | percent \[%\]                       |
+| temperature         | temperature                | celsius \[°C\]                      |
+| pressure            | barometric pressure        | ?                                   |
+| co                  | carbon monoxide            | ?                                   |
+| co2                 | carbon dioxide             | parts per billion \[ppb\]           |
+| h2s                 | hydrogen sulfide           |                                     |
+| nh2                 | amino radical              |                                     |
+| no                  | nitric oxide               |                                     |
+| no2                 | nitrogen dioxide           |                                     |
+| ox                  | oxalate                    |                                     |
+| particles_raw       |                            |                                     |
+| particles_corrected |                            |                                     |
+| rh                  | rhodium                    |                                     |
+| so2                 | sulfur dioxide             |                                     |
+| voc                 | volatile organic compounds |                                     |
+|                     |                            |                                     |
+| bc                  | black carbon               |                                     |
+| pm1                 | pm1                        |                                     |
+| pm2_5               | pm2.5                      |                                     |
+| pm10                | pm10                       |                                     |
+| noise               |                            |                                     |
+| light               |                            |                                     |
+|                     |                            |                                     |
 
 
 ## Example
@@ -88,25 +96,25 @@ response:
 ```json
 [
   {
-    "sample_date_time": "2024-05-01T00:00:00Z",
+    "sample_date_time": "2024-05-01 00:00:00",
     "humidity": 50.0,
     "temperature": 27.5,
     "co": 0
   },
   {
-    "sample_date_time": "2024-05-01T00:00:01Z",
+    "sample_date_time": "2024-05-01 00:00:01",
     "humidity": 50.0,
     "temperature": 27.5,
     "co": 0
   },
   {
-    "sample_date_time": "2024-05-01T00:00:02Z",
+    "sample_date_time": "2024-05-01 00:00:02",
     "humidity": 50.0,
     "temperature": 27.5,
     "co": 0
   },
   {
-    "sample_date_time": "2024-05-01T00:00:03Z",
+    "sample_date_time": "2024-05-01 00:00:03",
     "humidity": 50.0,
     "temperature": 27.5,
     "co": 0
