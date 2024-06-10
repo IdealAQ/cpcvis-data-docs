@@ -41,12 +41,12 @@ The measurement data is requested by calling `GET` request to the `/measurements
 
 The request requires the following URL parameters:
 
-| URL parameter  | required | description                                   | example                 |
-|----------------|----------|-----------------------------------------------|-------------------------|
-| date_time_from | yes      | date time to query data from                  | 2024-05-01T00:00:00Z    |
-| date_time_to   | yes      | date time to query data to                    | 2024-05-01T00:00:03Z    |
-| device_id      | yes      | ID of device to query data from               | cpc1                    |
-| parameters     | no       | parameters to query in comma-separated format | humidity,temperature,co |
+| URL parameter | required | description                                   | example                 |
+|---------------|----------|-----------------------------------------------|-------------------------|
+| time_from     | yes      | date time to query data from                  | 2024-05-01 00:00:00     |
+| time_to       | yes      | date time to query data to                    | 2024-05-01 00:00:03     |
+| device_id     | yes      | ID of device to query data from               | cpc1                    |
+| parameters    | no       | parameters to query in comma-separated format | humidity,temperature,co |
 
 
 ## Measurement parameters
@@ -87,7 +87,7 @@ The request requires the following URL parameters:
 request:
 ```
 curl -X 'GET' \
-  'http://domain.com/measurements?date_time_from=2024-05-01T00%3A00%3A00Z&date_time_to=2024-05-01T00%3A00%3A03Z&device_id=0&parameters=humidity%2Ctemperature%2Cco' \
+  'http://domain.com/measurements?time_from=2024-05-01%2000%3A00%3A00&time_to=2024-05-01%2000%3A00%3A03&device_id=0&parameters=humidity%2Ctemperature%2Cco' \
   -H 'accept: application/json' \
   -H 'Authorization: Bearer abc123'
 ```
@@ -96,25 +96,25 @@ response:
 ```json
 [
   {
-    "sample_date_time": "2024-05-01 00:00:00",
+    "time": "2024-05-01 00:00:00",
     "humidity": 50.0,
     "temperature": 27.5,
     "co": 0
   },
   {
-    "sample_date_time": "2024-05-01 00:00:01",
+    "time": "2024-05-01 00:00:01",
     "humidity": 50.0,
     "temperature": 27.5,
     "co": 0
   },
   {
-    "sample_date_time": "2024-05-01 00:00:02",
+    "time": "2024-05-01 00:00:02",
     "humidity": 50.0,
     "temperature": 27.5,
     "co": 0
   },
   {
-    "sample_date_time": "2024-05-01 00:00:03",
+    "time": "2024-05-01 00:00:03",
     "humidity": 50.0,
     "temperature": 27.5,
     "co": 0
