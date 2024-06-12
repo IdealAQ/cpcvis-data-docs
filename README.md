@@ -67,15 +67,15 @@ The request requires the following URL parameters:
 | no            | nitric oxide               |                                     |
 | no2           | nitrogen dioxide           |                                     |
 | ox            | oxalate                    |                                     |
-| pn            | particle number            | #/cm³                               |
+| pn            | particle number            | particles per cubic cm \[#/cm³]     |
 | rh            | rhodium                    |                                     |
 | so2           | sulfur dioxide             |                                     |
 | voc           | volatile organic compounds |                                     |
 |               |                            |                                     |
 | bc            | black carbon               |                                     |
-| pm1           | pm1                        | μg/m³                               |
-| pm2_5         | pm2.5                      | μg/m³                               |
-| pm10          | pm10                       | μg/m³                               |
+| pm1           | pm1                        | micrograms per cubic m \[μg/m³]     |
+| pm2_5         | pm2.5                      | micrograms per cubic m \[μg/m³]     |
+| pm10          | pm10                       | micrograms per cubic m \[μg/m³]     |
 | noise         |                            |                                     |
 | light         |                            |                                     |
 |               |                            |                                     |
