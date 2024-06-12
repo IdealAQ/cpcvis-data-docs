@@ -45,41 +45,40 @@ The request requires the following URL parameters:
 |---------------|----------|-----------------------------------------------|-------------------------|
 | time_from     | yes      | date time to query data from                  | 2024-05-01 00:00:00     |
 | time_to       | yes      | date time to query data to                    | 2024-05-01 00:00:03     |
-| device_id     | yes      | ID of device to query data from               | cpc1                    |
+| device        | yes      | code of device to query data from             | cpc1                    |
 | parameters    | no       | parameters to query in comma-separated format | humidity,temperature,co |
 
 
 ## Measurement parameters
 
-| parameter key       | description                | unit                                |
-|---------------------|----------------------------|-------------------------------------|
-| time                | date time of the sample    | UTC date time (YYYY-MM-DD hh:mm:ss) |
-| location_lon        | location longitude         | degrees \[°]                        |
-| location_lat        | location latitude          | degrees \[°]                        |
-| location_alt        | location altitude          | degrees \[°]                        |
-| humidity            | relative humidity          | percent \[%\]                       |
-| temperature         | temperature                | celsius \[°C\]                      |
-| pressure            | barometric pressure        | ?                                   |
-| co                  | carbon monoxide            | ?                                   |
-| co2                 | carbon dioxide             | parts per billion \[ppb\]           |
-| h2s                 | hydrogen sulfide           |                                     |
-| nh2                 | amino radical              |                                     |
-| no                  | nitric oxide               |                                     |
-| no2                 | nitrogen dioxide           |                                     |
-| ox                  | oxalate                    |                                     |
-| particles_raw       |                            |                                     |
-| particles_corrected |                            |                                     |
-| rh                  | rhodium                    |                                     |
-| so2                 | sulfur dioxide             |                                     |
-| voc                 | volatile organic compounds |                                     |
-|                     |                            |                                     |
-| bc                  | black carbon               |                                     |
-| pm1                 | pm1                        |                                     |
-| pm2_5               | pm2.5                      |                                     |
-| pm10                | pm10                       |                                     |
-| noise               |                            |                                     |
-| light               |                            |                                     |
-|                     |                            |                                     |
+| parameter key | description                | unit                                |
+|---------------|----------------------------|-------------------------------------|
+| time          | date time of the sample    | UTC date time (YYYY-MM-DD hh:mm:ss) |
+| location_lon  | location longitude         | degrees \[°]                        |
+| location_lat  | location latitude          | degrees \[°]                        |
+| location_alt  | location altitude          | degrees \[°]                        |
+| humidity      | relative humidity          | percent \[%\]                       |
+| temperature   | temperature                | celsius \[°C\]                      |
+| pressure      | barometric pressure        | ?                                   |
+| co            | carbon monoxide            | ?                                   |
+| co2           | carbon dioxide             | parts per billion \[ppb\]           |
+| h2s           | hydrogen sulfide           |                                     |
+| nh2           | amino radical              |                                     |
+| no            | nitric oxide               |                                     |
+| no2           | nitrogen dioxide           |                                     |
+| ox            | oxalate                    |                                     |
+| pn            | particle number            | #/cm³                               |
+| rh            | rhodium                    |                                     |
+| so2           | sulfur dioxide             |                                     |
+| voc           | volatile organic compounds |                                     |
+|               |                            |                                     |
+| bc            | black carbon               |                                     |
+| pm1           | pm1                        | μg/m³                               |
+| pm2_5         | pm2.5                      | μg/m³                               |
+| pm10          | pm10                       | μg/m³                               |
+| noise         |                            |                                     |
+| light         |                            |                                     |
+|               |                            |                                     |
 
 
 ## Example
