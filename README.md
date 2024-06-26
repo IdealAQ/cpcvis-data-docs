@@ -1,12 +1,12 @@
 # Measurement data API
 ## Authentication
-An bearer token is needed for sending API calls.
+A Bearer token is needed for sending API calls.
 
 The token is obtained by calling `POST` request to the `/token` endpoint.
 The request requires the following form data:
 - grant_type: password
 - username: *_\<username\>_*
-- username: *_\<password\>_*
+- password: *_\<password\>_*
 
 example:
 ```
@@ -122,7 +122,7 @@ response:
 ```
 
 ## Limitations
-- The amount requested data to be returned cannot exceed 5MB before filters are applied (queried parameters). If the data size is exceeded, the response contains only the amount of data items that fit in the limitation and subsequent items are not returned.
+- The requested data to be returned cannot exceed 5MB in size before filters are applied (queried parameters). If the data size is exceeded, the response contains only the amount of data items that fit in the limitation and subsequent items are not returned.
 - One way to overcome the limitation mentioned above is the use of subsequent requests.
 - Subsequent requests might trigger an error in the service of our third-party storage service provider. For this reason, between subsequent requests there must be a sufficient waiting time.
 
@@ -131,6 +131,6 @@ response:
 - avoid subsequent requests if possible. 
 - in case of subsequent requests, use sufficient waiting time between the requests. The length of the waiting time can be determined experimentally.
 
-> **Note:** The system is still in development mode and has limited resources. For that reason, call API with caution and have in mind that there is only a number of requests the current setup can handle per time! This might be also the reason for unexpected errors. The system might be jammed either by you or someone else.
+> **Note:** The system is still in development mode and has limited resources. For that reason, call API with caution and keep in mind that there is only a limited number of requests the current setup can handle at a time! This might be also the reason for unexpected errors. The system might be jammed either by you or someone else.
 
 In case of persisting issues, contact [dominik.rohal@helsinki.fi](mailto:dominik.rohal@helsinki.fi?subject=[CPC%20vis%20API]%20Issue)
