@@ -86,7 +86,7 @@ The request requires the following URL parameters:
 request:
 ```
 curl -X 'GET' \
-  'http://domain.com/measurements?time_from=2024-05-01%2000%3A00%3A00&time_to=2024-05-01%2000%3A00%3A03&device_id=0&parameters=humidity%2Ctemperature%2Cco' \
+  'http://domain.com/measurements?time_from=2024-05-01%2000%3A00%3A00&time_to=2024-05-01%2000%3A00%3A03&device=0&parameters=humidity%2Ctemperature%2Cco' \
   -H 'accept: application/json' \
   -H 'Authorization: Bearer abc123'
 ```
