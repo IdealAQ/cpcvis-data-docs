@@ -74,8 +74,8 @@ The request requires the following URL parameters:
 |               |                            |                                     |
 | bc            | black carbon               |                                     |
 | pm1p0         | pm1                        | micrograms per cubic m \[μg/m³]     |
-| pm2p5         | pm4.0                      | micrograms per cubic m \[μg/m³]     |
-| pm4p0         | pm2.5                      | micrograms per cubic m \[μg/m³]     |
+| pm2p5         | pm2.5                      | micrograms per cubic m \[μg/m³]     |
+| pm4p0         | pm4.0                      | micrograms per cubic m \[μg/m³]     |
 | pm10p0        | pm10                       | micrograms per cubic m \[μg/m³]     |
 | noise         |                            |                                     |
 | light         |                            |                                     |
